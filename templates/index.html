@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Love Quote App 💖</title>
+    <style>
+        body{
+            background: linear-gradient(to right,#ff9a9e,#fad0c4);
+            text-align:center;
+            font-family:sans-serif;
+            padding-top:80px;
+        }
+        h1{
+            color:#ff4b5c;
+        }
+        .quote{
+            font-size:22px;
+            margin:20px;
+            font-weight:bold;
+        }
+        input{
+            padding:10px;
+            border-radius:20px;
+            border:1px solid #ff4b5c;
+            width:250px;
+        }
+        button{
+            padding:10px 20px;
+            border-radius:20px;
+            border:none;
+            background:#ff4b5c;
+            color:white;
+            cursor:pointer;
+        }
+        button:hover{
+            background:#e84355;
+        }
+        .message{
+            color:green;
+            font-weight:bold;
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>💖 Welcome Shahu, You Are My Everything 💖</h1>
+
+    <div class="quote">
+        {{ quote }}
+    </div>
+
+    <form method="POST">
+        <input type="text" name="new_quote" placeholder="Add your own love quote 💕">
+        <button type="submit">Save 💾</button>
+    </form>
+
+    <div class="message">
+        {{ message }}
+    </div>
+
+    <br><br>
+
+    <button onclick="showSecret()">💍 Special Surprise</button>
+
+    <script>
+        function showSecret(){
+            alert("Shahu 💖\nWill you always stay with me forever? 😘");
+        }
+    </script>
+
+</body>
+</html>
