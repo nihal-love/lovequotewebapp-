@@ -1,72 +1,99 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Love Quote App 💖</title>
-    <style>
-        body{
-            background: linear-gradient(to right,#ff9a9e,#fad0c4);
-            text-align:center;
-            font-family:sans-serif;
-            padding-top:80px;
-        }
-        h1{
-            color:#ff4b5c;
-        }
-        .quote{
-            font-size:22px;
-            margin:20px;
-            font-weight:bold;
-        }
-        input{
-            padding:10px;
-            border-radius:20px;
-            border:1px solid #ff4b5c;
-            width:250px;
-        }
-        button{
-            padding:10px 20px;
-            border-radius:20px;
-            border:none;
-            background:#ff4b5c;
-            color:white;
-            cursor:pointer;
-        }
-        button:hover{
-            background:#e84355;
-        }
-        .message{
-            color:green;
-            font-weight:bold;
-            margin-top:10px;
-        }
-    </style>
+
+<title>Shahu ❤️ Nihal</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
 </head>
+
 <body>
+<div id="introScreen">
 
-    <h1>💖 Welcome Shahu, You Are My Everything 💖</h1>
+<h1 class="introTitle">
 
-    <div class="quote">
-        {{ quote }}
-    </div>
+Shahu ❤️ Nihal
 
-    <form method="POST">
-        <input type="text" name="new_quote" placeholder="Add your own love quote 💕">
-        <button type="submit">Save 💾</button>
-    </form>
+</h1>
+<h2 class="heartbeat">
 
-    <div class="message">
-        {{ message }}
-    </div>
+I LOVE YOU SHAHU ❤️
 
-    <br><br>
+</h2>
 
-    <button onclick="showSecret()">💍 Special Surprise</button>
+<p>Forever Love Story</p>
 
-    <script>
-        function showSecret(){
-            alert("Shahu 💖\nWill you always stay with me forever? 😘");
-        }
-    </script>
+</div>
+<h1 class="title">Shahu ❤️ Nihal</h1>
+
+<h3>Forever Love Story</h3>
+
+<p id="timeMessage"></p>
+
+<div class="quote" id="quote">
+{{quote}}
+</div>
+
+<div id="timer"></div>
+
+<form method="POST">
+<input name="new_quote" placeholder="Write love quote">
+<button>Add Quote</button>
+</form>
+
+<p>{{message}}</p>
+
+<button onclick="missYou()">Miss You 💌</button>
+<button onclick="loveLetter()">Love Letter 💖</button>
+<button onclick="proposal()">Proposal 💍</button>
+
+<button onclick="playMusic()">Play Music 🎵</button>
+<button onclick="pauseMusic()">Pause Music</button>
+<button id="installBtn">Install Love App 📱</button>
+<button onclick="loveVoice()">Hear Love Voice 💖</button>
+<button onclick="darkTheme()">Dark Theme 🌌</button>
+<button onclick="pinkTheme()">Pink Theme 💖</button>
+<h2>Our Memories 📸</h2>
+
+<div class="gallery">
+
+<img src="/static/photos/1.jpg">
+<img src="/static/photos/2.jpg">
+<img src="/static/photos/3.jpg">
+<img src="/static/photos/4.jpg">
+
+</div>
+
+<h2>Photo Slideshow</h2>
+
+<img id="slideshow" src="/static/photos/1.jpg">
+
+<br><br>
+
+<button onclick="installApp()">Install App 📱</button>
+<button onclick="shareLove()">Share Love App 💖</button>
+
+<div id="popup" class="popup">
+
+<p id="popupText"></p>
+
+<button onclick="closePopup()">Close</button>
+
+</div>
+<audio id="music" src="/static/song.mp3"></audio>
+
+<div id="hearts"></div>
+
+<script src="/static/script.js"></script>
+
+<div class="ringBox">
+
+💍
+
+</div>
 
 </body>
+
 </html>
